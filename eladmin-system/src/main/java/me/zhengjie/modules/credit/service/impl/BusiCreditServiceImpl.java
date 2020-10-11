@@ -85,6 +85,7 @@ public class BusiCreditServiceImpl implements BusiCreditService {
     }
 
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public void deleteAll(Long[] ids) {
         for (Long creditId : ids) {
             busiCreditRepository.deleteById(creditId);

@@ -4,7 +4,7 @@ spring:
     druid:
       db-type: com.alibaba.druid.pool.DruidDataSource
       driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-      url: jdbc:log4jdbc:mysql://localhost:3306/eladmin?serverTimezone=GMT%2b8&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+      url: jdbc:log4jdbc:mysql://localhost:3306/eladmin?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
       username: root
       password: 123456
       # 初始连接数
@@ -20,7 +20,7 @@ spring:
       # 连接在池中最小生存的时间
       min-evictable-idle-time-millis: 300000
       # 连接在池中最大生存的时间
-      max-evictable-idle-time-millis: 900000
+        max-evictable-idle-time-millis: 900000
       test-while-idle: true
       test-on-borrow: false
       test-on-return: false
